@@ -1,17 +1,14 @@
 # -*- coding: utf-8 -*-
 """
-    :author: Grey Li (李辉)
-    :url: http://greyli.com
-    :copyright: © 2018 Grey Li <withlihui@gmail.com>
-    :license: MIT, see LICENSE for more details.
+    :author: Guowei
 """
 from flask import render_template, flash, redirect, url_for, request, current_app, Blueprint
 from flask_login import login_required, current_user
 
-from bluelog.extensions import db
-from bluelog.forms import SettingForm, PostForm, CategoryForm, LinkForm
-from bluelog.models import Post, Category, Comment, Link
-from bluelog.utils import redirect_back
+from treasure_house.extensions import db
+from treasure_house.forms import SettingForm, PostForm, CategoryForm, LinkForm
+from treasure_house.models import Post, Category, Comment, Link
+from treasure_house.utils import redirect_back
 
 admin_bp = Blueprint('admin', __name__)
 
@@ -40,7 +37,7 @@ def settings():
 def manage_post():
     page = request.args.get('page', 1, type=int)
     pagination = Post.query.order_by(Post.timestamp.desc()).paginate(
-        page, per_page=current_app.config['BLUELOG_MANAGE_POST_PER_PAGE'])
+        page, per_page=current_app.config['treasure_house_MANAGE_POST_PER_PAGE'])
     posts = pagination.items
     return render_template('admin/manage_post.html', page=page, pagination=pagination, posts=posts)
 
@@ -111,7 +108,7 @@ def set_comment(post_id):
 def manage_comment():
     filter_rule = request.args.get('filter', 'all')  # 'all', 'unreviewed', 'admin'
     page = request.args.get('page', 1, type=int)
-    per_page = current_app.config['BLUELOG_COMMENT_PER_PAGE']
+    per_page = current_app.config['treasure_house_COMMENT_PER_PAGE']
     if filter_rule == 'unread':
         filtered_comments = Comment.query.filter_by(reviewed=False)
     elif filter_rule == 'admin':
@@ -239,3 +236,8 @@ def delete_link(link_id):
     db.session.commit()
     flash('Link deleted.', 'success')
     return redirect(url_for('.manage_link'))
+
+
+@admin_bp.route('/about')
+def about_me():
+    return render_template("admin/about.html")

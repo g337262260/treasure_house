@@ -1,16 +1,13 @@
 # -*- coding: utf-8 -*-
 """
-    :author: Grey Li (李辉)
-    :url: http://greyli.com
-    :copyright: © 2018 Grey Li <withlihui@gmail.com>
-    :license: MIT, see LICENSE for more details.
+    :author: Guowei
 """
 from datetime import datetime
 
 from flask_login import UserMixin
 from werkzeug.security import generate_password_hash, check_password_hash
 
-from bluelog.extensions import db
+from treasure_house.extensions import db
 
 
 class Admin(db.Model, UserMixin):
@@ -34,6 +31,7 @@ class Category(db.Model):
     name = db.Column(db.String(30), unique=True)
 
     posts = db.relationship('Post', back_populates='category')
+    sites = db.relationship('Site',back_populates='category')
 
     def delete(self):
         default_category = Category.query.get(1)
@@ -82,3 +80,14 @@ class Link(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(30))
     url = db.Column(db.String(255))
+
+
+class Site(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(30))
+    url = db.Column(db.String(255))
+    description = db.Column(db.String(255))
+    #: 网站的分类: 1.社交  2.学习  3.音乐 4.视频  5.书籍  6.其他
+    category_id = db.Column(db.Integer, db.ForeignKey('category.id'))
+    timestamp = db.Column(db.DateTime, default=datetime.utcnow, index=True)
+

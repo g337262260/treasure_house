@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %}关于我{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h3>这是一些关于我的东西</h3><br>
+</div>
+
+<div>
+    {% if links %}
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>No.</th>
+            <th>Type</th>
+            <th>Content</th>
+        </tr>
+        </thead>
+        <tr>
+            {% for link in links %}
+        <tr>
+            <td>{{ loop.index }}</td>
+            <td>{{ link.name }}</td>
+            <td><a href="{{ link.url }}" target="_blank">{{ link.url }}</a></td>
+        </tr>
+        {% endfor %}
+        </tr>
+    </table>
+    {% else %}
+    <div class="tip"><h5>No links.</h5></div>
+    {% endif %}
+</div>
+
+{% endblock %}

@@ -1,2 +1,2 @@
-FLASK_APP=bluelog
+FLASK_APP=treasure_house
 FLASK_ENV=development

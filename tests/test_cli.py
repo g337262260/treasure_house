@@ -5,8 +5,8 @@
     :copyright: © 2018 Grey Li <withlihui@gmail.com>
     :license: MIT, see LICENSE for more details.
 """
-from bluelog.models import Admin, Post, Category, Comment
-from bluelog.extensions import db
+from treasure_house.models import Admin, Post, Category, Comment
+from treasure_house.extensions import db
 from tests.base import BaseTestCase
 
 

@@ -1,9 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-    :author: Grey Li (李辉)
-    :url: http://greyli.com
-    :copyright: © 2018 Grey Li <withlihui@gmail.com>
-    :license: MIT, see LICENSE for more details.
+    :author: Guowei
 """
 from flask_ckeditor import CKEditorField
 from flask_wtf import FlaskForm
@@ -11,7 +8,7 @@ from wtforms import StringField, SubmitField, SelectField, TextAreaField, Valida
     BooleanField, PasswordField
 from wtforms.validators import DataRequired, Email, Length, Optional, URL
 
-from bluelog.models import Category
+from treasure_house.models import Category
 
 
 class LoginForm(FlaskForm):
@@ -67,4 +64,12 @@ class AdminCommentForm(CommentForm):
 class LinkForm(FlaskForm):
     name = StringField('Name', validators=[DataRequired(), Length(1, 30)])
     url = StringField('URL', validators=[DataRequired(), URL(), Length(1, 255)])
+    submit = SubmitField()
+
+
+class SiteForm(FlaskForm):
+    name = StringField('Name', validators=[DataRequired(), Length(1, 30)])
+    url = StringField('URL', validators=[DataRequired(), URL(), Length(1, 255)])
+    category = SelectField('Category', coerce=int, default=1)
+    description = StringField('Description', validators=[Length(1, 255)])
     submit = SubmitField()

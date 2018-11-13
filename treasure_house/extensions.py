@@ -1,9 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-    :author: Grey Li (李辉)
-    :url: http://greyli.com
-    :copyright: © 2018 Grey Li <withlihui@gmail.com>
-    :license: MIT, see LICENSE for more details.
+    :author: Guowei
 """
 from flask_bootstrap import Bootstrap
 from flask_ckeditor import CKEditor
@@ -28,7 +25,7 @@ migrate = Migrate()
 
 @login_manager.user_loader
 def load_user(user_id):
-    from bluelog.models import Admin
+    from treasure_house.models import Admin
     user = Admin.query.get(int(user_id))
     return user
 

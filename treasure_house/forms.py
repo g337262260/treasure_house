@@ -69,7 +69,12 @@ class LinkForm(FlaskForm):
 
 class SiteForm(FlaskForm):
     name = StringField('Name', validators=[DataRequired(), Length(1, 30)])
-    url = StringField('URL', validators=[DataRequired(), URL(), Length(1, 255)])
     category = SelectField('Category', coerce=int, default=1)
-    description = StringField('Description', validators=[Length(1, 255)])
+    url = StringField('URL', validators=[DataRequired(), URL(), Length(1, 255)])
+    description = TextAreaField('Description', validators=[Length(1, 255)])
     submit = SubmitField()
+
+    def __init__(self, *args, **kwargs):
+        super(SiteForm, self).__init__(*args, **kwargs)
+        self.category.choices = [(category.id, category.name)
+                                 for category in Category.query.order_by(Category.name).all()]

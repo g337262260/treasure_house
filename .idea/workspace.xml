@@ -2,32 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c0949d9-406f-4a25-bd42-d376bb9713c7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.coveragerc" beforeDir="false" afterPath="$PROJECT_DIR$/.coveragerc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.flaskenv" beforeDir="false" afterPath="$PROJECT_DIR$/.flaskenv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/treasure-house.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/treasure-house.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_blog.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_blog.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_cli.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_cli.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/treasure_house/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/treasure_house/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-dev.db" beforeDir="false" afterPath="$PROJECT_DIR$/data-dev.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/treasure_house/blueprints/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/treasure_house/blueprints/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/treasure_house/blueprints/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/treasure_house/blueprints/auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/treasure_house/blueprints/blog.py" beforeDir="false" afterPath="$PROJECT_DIR$/treasure_house/blueprints/blog.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/treasure_house/emails.py" beforeDir="false" afterPath="$PROJECT_DIR$/treasure_house/emails.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/treasure_house/extensions.py" beforeDir="false" afterPath="$PROJECT_DIR$/treasure_house/extensions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/treasure_house/fakes.py" beforeDir="false" afterPath="$PROJECT_DIR$/treasure_house/fakes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/treasure_house/blueprints/sites.py" beforeDir="false" afterPath="$PROJECT_DIR$/treasure_house/blueprints/sites.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/treasure_house/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/treasure_house/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/treasure_house/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/treasure_house/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/treasure_house/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/treasure_house/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/treasure_house/templates/admin/manage_comment.html" beforeDir="false" afterPath="$PROJECT_DIR$/treasure_house/templates/admin/manage_comment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/treasure_house/templates/admin/manage_post.html" beforeDir="false" afterPath="$PROJECT_DIR$/treasure_house/templates/admin/manage_post.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/treasure_house/static/favicon.ico" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/treasure_house/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/treasure_house/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/treasure_house/templates/blog/_sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/treasure_house/templates/blog/_sidebar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/treasure_house/templates/blog/about.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/treasure_house/templates/blog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/treasure_house/templates/blog/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/treasure_house/templates/sites/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/treasure_house/templates/sites/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/treasure_house/templates/sites/new_site.html" beforeDir="false" afterPath="$PROJECT_DIR$/treasure_house/templates/sites/new_site.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,73 +23,81 @@
     <session id="-23123965">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.36" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="20" />
+          <entry key="html" value="37" />
+          <entry key="ico" value="1" />
           <entry key="log" value="1" />
-          <entry key="py" value="34" />
+          <entry key="png" value="1" />
+          <entry key="py" value="43" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="20" />
+          <entry key="HTML" value="37" />
+          <entry key="Image" value="2" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="34" />
+          <entry key="Python" value="43" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="coveragerc" value="19" />
           <entry key="flaskenv" value="29" />
-          <entry key="html" value="659" />
-          <entry key="py" value="891" />
+          <entry key="html" value="1344" />
+          <entry key="py" value="1997" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="659" />
+          <entry key="HTML" value="1344" />
           <entry key="PLAIN_TEXT" value="48" />
-          <entry key="Python" value="891" />
+          <entry key="Python" value="1997" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/treasure_house/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="88" column="36" selection-start-line="88" selection-start-column="36" selection-end-line="88" selection-end-column="36" />
+            <state relative-caret-position="246">
+              <caret line="29" column="48" lean-forward="true" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
               <folding>
-                <marker date="1542101679360" expanded="true" signature="2787:2788" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/treasure_house/blueprints/sites.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="27" column="27" lean-forward="true" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
-              <folding>
-                <element signature="e#52#112#0" expanded="true" />
-                <marker date="1542103163280" expanded="true" signature="611:616" ph="..." />
+                <marker date="1542159015711" expanded="true" signature="2880:2881" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/treasure_house/forms.py">
+        <entry file="file://$PROJECT_DIR$/treasure_house/blueprints/sites.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="68" column="14" selection-start-line="68" selection-start-column="6" selection-end-line="68" selection-end-column="14" />
+            <state relative-caret-position="540">
+              <caret line="59" column="74" selection-start-line="59" selection-start-column="63" selection-end-line="59" selection-end-column="74" />
+              <folding>
+                <element signature="e#52#134#0" expanded="true" />
+                <marker date="1542183636188" expanded="true" signature="1674:2184" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/treasure_house/blueprints/blog.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1323">
+              <caret line="70" column="27" lean-forward="true" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
+              <folding>
+                <element signature="e#52#166#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -113,20 +105,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/treasure_house/blueprints/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="40" />
+            <state relative-caret-position="324">
+              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
               <folding>
-                <marker date="1542099425493" expanded="true" signature="8036:8084" ph="..." />
+                <element signature="e#52#144#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/treasure_house/templates/sites/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+            <state relative-caret-position="162">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -134,17 +126,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/treasure_house/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="42" column="81" selection-start-line="42" selection-start-column="81" selection-end-line="42" selection-end-column="81" />
+            <state relative-caret-position="378">
+              <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/treasure_house/templates/admin/about.html">
+        <entry file="file://$PROJECT_DIR$/treasure_house/templates/admin/manage_comment.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="503">
-              <caret line="22" column="23" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="23" />
+            <state relative-caret-position="432">
+              <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -152,8 +144,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/treasure_house/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-10">
-              <caret line="202" lean-forward="true" selection-start-line="202" selection-end-line="202" />
+            <state relative-caret-position="92">
+              <caret line="102" column="29" selection-start-line="102" selection-start-column="4" selection-end-line="102" selection-end-column="29" />
               <folding>
                 <element signature="e#52#66#0" expanded="true" />
               </folding>
@@ -178,6 +170,17 @@
       <find>link</find>
       <find>links</find>
       <find>new_link</find>
+      <find>trea</find>
+      <find>admin.manage_comment</find>
+      <find>filter</find>
+      <find>nav-pills</find>
+      <find>filter=</find>
+      <find>favicon</find>
+      <find>manage_comment</find>
+      <find>filter_rule</find>
+      <find>admin_bp</find>
+      <find>request</find>
+      <find>category_id</find>
     </findStrings>
     <replaceStrings>
       <replace>treasure_house</replace>
@@ -200,24 +203,24 @@
         <option value="$PROJECT_DIR$/treasure_house/settings.py" />
         <option value="$PROJECT_DIR$/treasure_house/templates/blog/index.html" />
         <option value="$PROJECT_DIR$/treasure_house/templates/sites/sites.html" />
-        <option value="$PROJECT_DIR$/treasure_house/__init__.py" />
         <option value="$PROJECT_DIR$/treasure_house/blueprints/blog.py" />
-        <option value="$PROJECT_DIR$/treasure_house/blueprints/admin.py" />
-        <option value="$PROJECT_DIR$/treasure_house/models.py" />
         <option value="$PROJECT_DIR$/treasure_house/templates/admin/about.html" />
-        <option value="$PROJECT_DIR$/treasure_house/templates/sites/index.html" />
+        <option value="$PROJECT_DIR$/treasure_house/models.py" />
+        <option value="$PROJECT_DIR$/treasure_house/templates/sites/new_site.html" />
+        <option value="$PROJECT_DIR$/treasure_house/blueprints/admin.py" />
         <option value="$PROJECT_DIR$/treasure_house/forms.py" />
         <option value="$PROJECT_DIR$/treasure_house/templates/base.html" />
-        <option value="$PROJECT_DIR$/treasure_house/templates/sites/new_site.html" />
+        <option value="$PROJECT_DIR$/treasure_house/__init__.py" />
         <option value="$PROJECT_DIR$/treasure_house/blueprints/sites.py" />
+        <option value="$PROJECT_DIR$/treasure_house/templates/sites/index.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="777" />
-    <option name="height" value="916" />
+    <option name="width" value="1456" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -241,8 +244,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Course" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -259,28 +260,36 @@
               <item name="treasure-house" type="b2602c69:ProjectViewProjectNode" />
               <item name="treasure-house" type="462c0819:PsiDirectoryNode" />
               <item name="treasure_house" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="treasure-house" type="b2602c69:ProjectViewProjectNode" />
               <item name="treasure-house" type="462c0819:PsiDirectoryNode" />
               <item name="treasure_house" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="sites" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="treasure-house" type="b2602c69:ProjectViewProjectNode" />
+              <item name="treasure-house" type="462c0819:PsiDirectoryNode" />
+              <item name="treasure_house" type="462c0819:PsiDirectoryNode" />
+              <item name="models.py" type="8704e2dd:PyFileNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Course" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="base&#9;FILE&#9;file://F:/learn/python/treasure-house/treasure_house/templates/base.html&#10;about&#9;FILE&#9;file://F:/learn/python/treasure-house/treasure_house/templates/admin/about.html&#10;BASE&#9;FILE&#9;file://F:/learn/python/treasure-house/treasure_house/templates/base.html&#10;index&#9;FILE&#9;file://F:/learn/python/treasure-house/treasure_house/templates/blog/index.html" />
+    <property name="SearchEverywhereHistoryKey" value="BLOG&#9;FILE&#9;file://F:/learn/python/treasure-house/treasure_house/blueprints/blog.py&#10;base&#9;FILE&#9;file://F:/learn/python/treasure-house/treasure_house/templates/base.html&#10;about&#9;FILE&#9;file://F:/learn/python/treasure-house/treasure_house/templates/admin/about.html&#10;BASE&#9;FILE&#9;file://F:/learn/python/treasure-house/treasure_house/templates/base.html&#10;index&#9;FILE&#9;file://F:/learn/python/treasure-house/treasure_house/templates/blog/index.html" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.spelling" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\learn\python\treasure-house\treasure_house\static" />
       <recent name="F:\learn\python\treasure-house\treasure_house\templates\sites" />
       <recent name="F:\learn\python\treasure-house\treasure_house\templates\admin" />
       <recent name="F:\learn\python\treasure-house\treasure_house\templates\blog" />
@@ -315,13 +324,9 @@
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25246826" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.1586742" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32884097" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -329,6 +334,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -340,11 +349,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/migrations/env.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1053">
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-1053" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_cli.py">
@@ -392,21 +397,8 @@
     <entry file="file://$PROJECT_DIR$/logs/treasure_house.log">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/treasure_house/templates/blog/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/treasure_house/templates/blog/sites.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -420,23 +412,6 @@
         <state relative-caret-position="-1215" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/treasure_house/templates/admin/manage_category.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="14" selection-start-line="14" selection-end-line="46" />
-          <folding>
-            <element signature="n#table#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/treasure_house/templates/blog/category.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/treasure_house/templates/admin/manage_link.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -447,89 +422,143 @@
     <entry file="file://$PROJECT_DIR$/treasure_house/blueprints/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/treasure_house/models.py">
+    <entry file="file://$PROJECT_DIR$/treasure_house/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="88" column="36" selection-start-line="88" selection-start-column="36" selection-end-line="88" selection-end-column="36" />
+        <state relative-caret-position="341">
+          <caret line="73" column="15" selection-start-line="73" selection-start-column="4" selection-end-line="73" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/treasure_house/templates/admin/manage_post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/treasure_house/templates/admin/new_post.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/treasure_house/templates/sites/new_site.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/treasure_house/static/favicon.ico">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/treasure_house/templates/admin/new_link.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/treasure_house/templates/admin/manage_category.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="14" selection-start-line="14" selection-end-line="46" />
           <folding>
-            <marker date="1542101679360" expanded="true" signature="2787:2788" ph="..." />
+            <element signature="n#table#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/treasure_house/templates/admin/about.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="22" column="23" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="23" />
+        <state relative-caret-position="-108">
+          <caret line="11" column="39" lean-forward="true" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/treasure_house/templates/sites/index.html">
+    <entry file="file://$PROJECT_DIR$/treasure_house/templates/blog/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+        <state relative-caret-position="108">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/treasure_house/forms.py">
+    <entry file="file://$PROJECT_DIR$/treasure_house/templates/blog/category.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="68" column="14" selection-start-line="68" selection-start-column="6" selection-end-line="68" selection-end-column="14" />
+        <state relative-caret-position="513">
+          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/treasure_house/static/icon.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/treasure_house/blueprints/blog.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="1323">
+          <caret line="70" column="27" lean-forward="true" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
           <folding>
             <element signature="e#52#166#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/treasure_house/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/treasure_house/blueprints/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+          <folding>
+            <element signature="e#52#144#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/treasure_house/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10">
-          <caret line="202" lean-forward="true" selection-start-line="202" selection-end-line="202" />
+        <state relative-caret-position="92">
+          <caret line="102" column="29" selection-start-line="102" selection-start-column="4" selection-end-line="102" selection-end-column="29" />
           <folding>
             <element signature="e#52#66#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/treasure_house/templates/base.html">
+    <entry file="file://$PROJECT_DIR$/treasure_house/templates/admin/manage_comment.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="42" column="81" selection-start-line="42" selection-start-column="81" selection-end-line="42" selection-end-column="81" />
+        <state relative-caret-position="432">
+          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/treasure_house/blueprints/admin.py">
+    <entry file="file://$PROJECT_DIR$/treasure_house/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="40" />
+        <state relative-caret-position="246">
+          <caret line="29" column="48" lean-forward="true" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
           <folding>
-            <marker date="1542099425493" expanded="true" signature="8036:8084" ph="..." />
+            <marker date="1542159015711" expanded="true" signature="2880:2881" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/treasure_house/templates/sites/new_site.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/treasure_house/blueprints/sites.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="27" column="27" lean-forward="true" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+        <state relative-caret-position="540">
+          <caret line="59" column="74" selection-start-line="59" selection-start-column="63" selection-end-line="59" selection-end-column="74" />
           <folding>
-            <element signature="e#52#112#0" expanded="true" />
-            <marker date="1542103163280" expanded="true" signature="611:616" ph="..." />
+            <element signature="e#52#134#0" expanded="true" />
+            <marker date="1542183636188" expanded="true" signature="1674:2184" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/treasure_house/templates/sites/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>

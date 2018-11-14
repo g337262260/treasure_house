@@ -31,7 +31,7 @@ class Category(db.Model):
     name = db.Column(db.String(30), unique=True)
 
     posts = db.relationship('Post', back_populates='category')
-    sites = db.relationship('Site',back_populates='category')
+    sites = db.relationship('Site', back_populates='category', cascade='all, delete-orphan')
 
     def delete(self):
         default_category = Category.query.get(1)
@@ -89,5 +89,5 @@ class Site(db.Model):
     description = db.Column(db.String(255))
     #: 网站的分类: 1.社交  2.学习  3.音乐 4.视频  5.书籍  6.其他
     category_id = db.Column(db.Integer, db.ForeignKey('category.id'))
+    category = db.relationship('Category', back_populates='sites')
     timestamp = db.Column(db.DateTime, default=datetime.utcnow, index=True)
-

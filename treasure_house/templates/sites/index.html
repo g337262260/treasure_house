@@ -1,11 +1,34 @@
 {% extends 'base.html' %}
-
+{% from 'bootstrap/pagination.html' import render_pagination %}
 {% block title %}Sites{% endblock %}
 
 {% block content %}
 <div class="page-header">
-    <h3>这是一些网站</h3>
+    <h3>Sites
+        <small class="text-muted">{{ pagination.total }}</small>
+        <span class="float-right"><a class="btn btn-primary btn-sm"
+                                     href="{{ url_for('.new_site') }}">New Site</a></span>
+    </h3>
 </div>
+
+{% if categories %}
+<ul class="nav nav-pills">
+    <li class="nav-item">
+        <a class="nav-link disabled" href="#">Filter </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link {% if filter_rule == 0  %}active{% endif %}"
+                   href="{{ url_for('sites.classify_site', filter=0) }}">All</a>
+    </li>
+    {% for category in categories %}
+    <li class="nav-item">
+        <a class="nav-link {% if filter_rule == category.id  %}active{% endif %}"
+                   href="{{ url_for('sites.classify_site', filter=category.id) }}">{{ category.name }}</a>
+    </li>
+    {% endfor%}
+
+</ul>
+{% endif%}
 
 {% if sites %}
 <table class="table table-striped">
@@ -20,7 +43,7 @@
     <tr>
         {% for site in sites %}
     <tr>
-        <td>{{ loop.index }}</td>
+        <td>{{ loop.index + ((page - 1) * config.TREASURE_HOUSE_MANAGE_POST_PER_PAGE) }}</td>
         <td>{{ site.name }}</td>
         <td>{{ site.description }}</td>
         <td><a href="{{ site.url }}" target="_blank">{{ site.url }}</a></td>
@@ -28,6 +51,7 @@
     {% endfor %}
     </tr>
 </table>
+<div class="page-footer">{{ render_pagination(pagination) }}</div>
 {% else %}
 <div class="tip"><h5>No sites.</h5></div>
 {% endif %}

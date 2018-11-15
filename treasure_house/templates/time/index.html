@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block title %}Timer{% endblock %}
+{% block head %}
+{{ super() }}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/TimeCircles.css') }}" type="text/css">
+
+{% endblock head %}
+
+{% block style %}
+<style>
+        body {
+            -webkit-font-smoothing: antialiased;
+            font-family: Helvetica Neue, Helvetica, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+            background-color: #fffceb;
+        }
+
+        .container {
+            width: 800px;
+            height: 340px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -400px;
+            margin-top: -170px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+</style>
+{% endblock style %}
+
+{% block content %}
+<div class="container">
+    <div class="content">
+        <h2>TIME UNTIL 2017-12-31 💓 CHERISH EVERY DAY</h2>
+        <div id="DateCountdown" data-date="2017-12-31 00:00:00"></div>
+    </div>
+</div>
+{% endblock %}
+
+
+{% block scripts %}
+{{ super() }}
+<script type="text/javascript" src="{{ url_for('static', filename='js/TimeCircles.js') }}"></script>
+<script>
+        $("#DateCountdown").TimeCircles();
+
+
+</script>
+{% endblock %}

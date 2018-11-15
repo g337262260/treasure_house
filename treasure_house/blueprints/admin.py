@@ -241,3 +241,8 @@ def delete_link(link_id):
 @admin_bp.route('/about')
 def about_me():
     return render_template("admin/about.html")
+
+
+@admin_bp.route('/timer')
+def timer_us():
+    return render_template("time/index.html")

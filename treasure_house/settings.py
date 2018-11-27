@@ -1,22 +1,9 @@
 # -*- coding: utf-8 -*-
 """
-    :author: Grey Li (李辉)
-    :url: http://greyli.com
-    :copyright: © 2018 Grey Li <withlihui@gmail.com>
-    :license: MIT, see LICENSE for more details.
+    :author: Guowei
 """
 import os
 import sys
-
-basedir = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
-
-# SQLite URI compatible
-WIN = sys.platform.startswith('win')
-if WIN:
-    prefix = 'sqlite:///'
-else:
-    prefix = 'sqlite:////'
-
 
 class BaseConfig(object):
     SECRET_KEY = os.getenv('SECRET_KEY', 'dev key')
@@ -37,13 +24,20 @@ class BaseConfig(object):
     TREASURE_HOUSE_POST_PER_PAGE = 10
     TREASURE_HOUSE_MANAGE_POST_PER_PAGE = 15
     TREASURE_HOUSE_COMMENT_PER_PAGE = 15
+    TREASURE_HOUSE_MOVIE_PER_PAGE = 18
     # ('theme name', 'display name')
     TREASURE_HOUSE_THEMES = {'perfect_blue': 'Perfect Blue', 'black_swan': 'Black Swan'}
     TREASURE_HOUSE_SLOW_QUERY_THRESHOLD = 1
 
 
 class DevelopmentConfig(BaseConfig):
-    SQLALCHEMY_DATABASE_URI = prefix + os.path.join(basedir, 'data-dev.db')
+    HOSTNAME = '127.0.0.1'
+    PORT = '3306'
+    DATABASE = 'test'
+    USERNAME = 'root'
+    PASSWORD = '123456'
+    SQLALCHEMY_DATABASE_URI = "mysql+pymysql://{username}:{password}@{host}:{port}/{db}?charset=utf8". \
+        format(username=USERNAME, password=PASSWORD, host=HOSTNAME, port=PORT, db=DATABASE)
 
 
 class TestingConfig(BaseConfig):
@@ -53,7 +47,13 @@ class TestingConfig(BaseConfig):
 
 
 class ProductionConfig(BaseConfig):
-    SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL', prefix + os.path.join(basedir, 'data.db'))
+    HOSTNAME = '127.0.0.1'
+    PORT = '3306'
+    DATABASE = 'movie'
+    USERNAME = 'root'
+    PASSWORD = '123456'
+    SQLALCHEMY_DATABASE_URI = "mysql+pymysql://{username}:{password}@{host}:{port}/{db}?charset=utf8". \
+        format(username=USERNAME, password=PASSWORD, host=HOSTNAME, port=PORT, db=DATABASE)
 
 
 config = {

@@ -91,3 +91,17 @@ class Site(db.Model):
     category_id = db.Column(db.Integer, db.ForeignKey('category.id'))
     category = db.relationship('Category', back_populates='sites')
     timestamp = db.Column(db.DateTime, default=datetime.utcnow, index=True)
+
+
+class Movie(db.Model):
+    id = db.Column(db.Integer, primary_key=True,unique=True)
+    title = db.Column(db.String(255))
+    year = db.Column(db.Integer)
+    duration = db.Column(db.String(30))
+    url = db.Column(db.String(255))
+    summary = db.Column(db.Text)
+    image_url = db.Column(db.String(255))
+    score = db.Column(db.Float)
+    language = db.Column(db.String(30))
+    role = db.Column(db.String(100))
+    category =db.Column(db.Integer)

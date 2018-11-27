@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% from 'bootstrap/pagination.html' import render_pagination %}
+{% block title %}Movie{% endblock %}
+{% block content %}
+
+{% if movie %}
+
+<div class="page-header">
+    <h4>{{ movie.title }}
+    </h4>
+</div>
+<br/>
+<h6 class="text-muted">{{ movie.role}}</h6>
+<iframe id="video"
+src="http://app.baiyug.cn:2019/vip/index.php?url={{ movie.url }}"
+height=480 width=853
+frameborder=0 scrolling=no allowfullscreen=allowfullscreen></iframe>
+
+{% else %}
+<div class="tip"><h5>播放失败</h5></div>
+{% endif %}
+
+
+{% endblock %}

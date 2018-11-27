@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% from 'bootstrap/pagination.html' import render_pagination %}
+{% block title %}Movies{% endblock %}
+{% block content %}
+<div class="page-header">
+    <h2 class="font-thin m-b">Movie <span class="musicbar animate inline m-l-sm" style="width:20px;height:20px">
+                    <span class="bar1 a1 bg-primary lter"></span>
+                    <span class="bar2 a2 bg-info lt"></span>
+                    <span class="bar3 a3 bg-success"></span>
+                    <span class="bar4 a4 bg-warning dk"></span>
+                    <span class="bar5 a5 bg-danger dker"></span>
+                  </span></h2>
+</div>
+
+{% if movies %}
+<div class="row row-sm">
+    {% for movie in movies %}
+    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="item">
+            <div class="pos-rlt">
+                <div class="bottom">
+                    <span class="badge bg-info m-l-sm m-b-sm">{{ movie.score }}</span>
+                </div>
+                <a href="{{ url_for('movie.play',movie_id=movie.id) }}"><img src="https:{{ movie.image_url }}" alt="" class="r r-2x img-full"></a>
+            </div>
+            <div class="padder-v">
+                <a href="#" class="text-ellipsis">{{ movie.title}}</a>
+                <a href="#" class="text-ellipsis text-xs text-muted">{{ movie.year}}</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+    </tr>
+</div>
+<div class="page-footer">{{ render_pagination(pagination) }}</div>
+{% else %}
+<div class="tip"><h5>No movies.</h5></div>
+{% endif %}
+{% endblock %}

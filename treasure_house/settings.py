@@ -49,7 +49,7 @@ class TestingConfig(BaseConfig):
 class ProductionConfig(BaseConfig):
     HOSTNAME = '127.0.0.1'
     PORT = '3306'
-    DATABASE = 'movie'
+    DATABASE = 'th'
     USERNAME = 'root'
     PASSWORD = '123456'
     SQLALCHEMY_DATABASE_URI = "mysql+pymysql://{username}:{password}@{host}:{port}/{db}?charset=utf8". \

@@ -12,10 +12,12 @@ from flask_login import current_user
 from flask_sqlalchemy import get_debug_queries
 from flask_wtf.csrf import CSRFError
 
+from apis.v1 import api_v1
 from treasure_house.blueprints.admin import admin_bp
 from treasure_house.blueprints.auth import auth_bp
 from treasure_house.blueprints.blog import blog_bp
 from treasure_house.blueprints.sites import sites_bp
+from treasure_house.blueprints.movie import movie_bp
 from treasure_house.extensions import bootstrap, db, login_manager, csrf, ckeditor, mail, moment, toolbar, migrate
 from treasure_house.models import Admin, Post, Category, Comment, Link
 from treasure_house.settings import config
@@ -85,6 +87,7 @@ def register_extensions(app):
     moment.init_app(app)
     toolbar.init_app(app)
     migrate.init_app(app, db)
+    csrf.exempt(api_v1)
 
 
 def register_blueprints(app):
@@ -92,6 +95,8 @@ def register_blueprints(app):
     app.register_blueprint(admin_bp, url_prefix='/admin')
     app.register_blueprint(auth_bp, url_prefix='/auth')
     app.register_blueprint(sites_bp)
+    app.register_blueprint(movie_bp)
+    app.register_blueprint(api_v1, url_prefix='/api/v1')
 
 
 def register_shell_context(app):

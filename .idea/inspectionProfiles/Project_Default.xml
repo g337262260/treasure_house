@@ -4,7 +4,7 @@
     <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="ignoredPackages">
         <value>
-          <list size="37">
+          <list size="48">
             <item index="0" class="java.lang.String" itemvalue="flask-migrate" />
             <item index="1" class="java.lang.String" itemvalue="alembic" />
             <item index="2" class="java.lang.String" itemvalue="python-dateutil" />
@@ -42,6 +42,17 @@
             <item index="34" class="java.lang.String" itemvalue="wtforms" />
             <item index="35" class="java.lang.String" itemvalue="flask" />
             <item index="36" class="java.lang.String" itemvalue="argh" />
+            <item index="37" class="java.lang.String" itemvalue="chardet" />
+            <item index="38" class="java.lang.String" itemvalue="certifi" />
+            <item index="39" class="java.lang.String" itemvalue="flask-cors" />
+            <item index="40" class="java.lang.String" itemvalue="requests" />
+            <item index="41" class="java.lang.String" itemvalue="urllib3" />
+            <item index="42" class="java.lang.String" itemvalue="idna" />
+            <item index="43" class="java.lang.String" itemvalue="pymysql" />
+            <item index="44" class="java.lang.String" itemvalue="asn1crypto" />
+            <item index="45" class="java.lang.String" itemvalue="cffi" />
+            <item index="46" class="java.lang.String" itemvalue="cryptography" />
+            <item index="47" class="java.lang.String" itemvalue="pycparser" />
           </list>
         </value>
       </option>

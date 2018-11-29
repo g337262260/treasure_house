@@ -96,8 +96,3 @@ canvas{
   opacity:0.9
 }
 
-canvas{
-  position: fixed;
-  top: 0;
-  z-index: -1;
-}

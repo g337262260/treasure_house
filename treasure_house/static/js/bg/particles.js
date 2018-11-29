@@ -1508,6 +1508,9 @@ window.particlesJS = function(tag_id, params){
   /* set size canvas */
   canvas_el.style.width = "100%";
   canvas_el.style.height = "100%";
+  canvas_el.style.position = "fixed";
+  canvas_el.style.top = "0";
+  canvas_el.style.zIndex = "-1";
 
   /* append canvas */
   var canvas = document.getElementById(tag_id).appendChild(canvas_el);

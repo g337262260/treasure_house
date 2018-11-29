@@ -21,7 +21,10 @@
                 <div class="bottom">
                     <span class="badge bg-info m-l-sm m-b-sm">{{ movie.score }}</span>
                 </div>
-                <a href="{{ url_for('movie.play',movie_id=movie.id) }}"><img src="https:{{ movie.image_url }}" alt="" class="r r-2x img-full"></a>
+                <a href="{{ url_for('movie.play',movie_id=movie.id) }}">
+                    <img src="https://images.weserv.nl/?url={{ movie.image_url }}" alt="file" class="r r-2x img-full">
+
+                </a>
             </div>
             <div class="padder-v">
                 <a href="{{ url_for('movie.play',movie_id=movie.id) }}" class="text-ellipsis">{{ movie.title}}</a>

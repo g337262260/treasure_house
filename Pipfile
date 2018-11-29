@@ -6,7 +6,7 @@ name = "pypi"
 [dev-packages]
 coverage = "*"
 watchdog = "*"
-"flake8" = "*"
+flake8 = "*"
 faker = "*"
 
 [packages]
@@ -21,7 +21,7 @@ bootstrap-flask = "*"
 flask-login = "*"
 flask-debugtoolbar = "*"
 gunicorn = "*"
-"psycopg2" = "*"
+psycopg2 = "*"
 flask-migrate = "*"
 click = "*"
 flask-cors = "*"

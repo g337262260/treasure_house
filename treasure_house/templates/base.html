@@ -109,21 +109,19 @@
         </footer>
         {% endblock footer %}
     </main>
-
-</div>
-
-
 {% block scripts %}
-<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
-
 <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.2.1.slim.min.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
 {{ moment.include_moment(local_js=url_for('static', filename='js/moment-with-locales.min.js')) }}
 {% endblock %}
+</div>
+
+
+
 </body>
-<script type="text/javascript" src="{{ url_for('static', filename='js/bg/particles.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/bg/particles.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='js/bg/app.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='js/bg/stats.js') }}"></script>
 </html>

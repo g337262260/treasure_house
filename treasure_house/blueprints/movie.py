@@ -6,8 +6,11 @@
 from flask import Blueprint, request, current_app, render_template
 
 from treasure_house.models import Movie
+from flask_cors import CORS
 
 movie_bp = Blueprint('movie', __name__)
+
+CORS(movie_bp, supports_credentials=True)
 
 
 @movie_bp.route('/movie')
